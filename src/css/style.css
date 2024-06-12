@@ -1,0 +1,236 @@
+/* Nome da fonte importada: Josefin Sans */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* Nome da fonte importada: Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*Configurações de todo o documento*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.container-header{
+  background: url('../assets/img/home/carrousel/car.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  
+}
+
+.container-header #formula{
+  font-size: 2.2rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+}
+
+.container-header #e{
+  font-size: 2.5rem;
+  color: red;
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/*Estilando o menu de navegação*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 0.2);
+  font-size: 1.2rem;
+}
+
+.logo-container{
+  background-color: #010F1C;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.container-header a{
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 6rem;
+  max-width: 100%;
+  /* Logo nunca excede o tamanho do contêiner */
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  text-align: right;
+  z-index: 50;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+
+}
+
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  margin: 8px;
+  background-color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: white;
+}
+
+#login a{
+  color: #17AA40;
+}
+
+.navlink a:hover{
+  color: #E01600;
+}
+
+#login a:hover{
+  color: #3cff00;
+}
+
+
+
+
+
+/* Responsividade para tablet: padrão 768px*/
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    font-size: clamp(1rem, 100%, 1.57rem);
+  }
+
+  #logo {
+    width: 4.2rem;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-color: #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .container-header #e{
+    font-size: clamp(1rem, 1.25rem, 2rem);
+  }
+
+  .container-header #formula{
+    font-size: clamp(1rem, 1.1rem, 2rem);
+  }
+
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/*Adequação às telas do celular: tamanho 480px*/
+@media (max-width: 480px) {
+  #logo {
+    width: 2.4rem;
+  }
+
+  .container-header #e{
+    font-size: clamp(1rem, 1rem, 2rem);
+  }
+
+  .container-header #formula{
+    font-size: clamp(1rem, 0.88rem, 2rem);
+  }
+
+  #header{
+    align-items: normal;
+  }
+
+.active{
+  font-size: clamp(0.7rem, 0.5rem, 1.57rem);
+}
+
+.text-overlay{
+  font-size: clamp(1rem, 10%, 1.57rem);
+  height: auto;
+  width: auto;
+}
+
+.text-overlay h1{
+  font-size: clamp(0.5rem, 100%, 1.57rem);
+}
+}
