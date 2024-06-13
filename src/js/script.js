@@ -70,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Run the check once to show boxes already in view on page load
   checkBoxes();
 });
+

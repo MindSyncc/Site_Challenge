@@ -15,7 +15,6 @@
   background: url('../assets/img/home/carrousel/car.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
-  
 }
 
 .container-header #formula{
@@ -128,6 +127,40 @@ nav {
 #login a:hover{
   color: #3cff00;
 }
+
+/* Texto de apresentação */
+
+.section-apresentacao{
+  padding: 80px 100px;
+}
+#header-apresentacao{
+  text-align: center;
+  margin: 5%;
+  font-size: 2rem;
+}
+
+.horizontal-line {
+  border-top: 2px solid black; /* Cor e espessura da linha */
+  width: 100%; /* Largura da linha */
+  margin: 0; /* Espaçamento ao redor da linha */
+}
+
+#texto-apresentacao{
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
