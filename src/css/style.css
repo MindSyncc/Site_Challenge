@@ -155,17 +155,6 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Responsividade para tablet: padrão 768px*/
 
 @media (max-width: 768px) {
@@ -298,4 +287,148 @@ nav {
   font-size: clamp(0.7rem, 0.8rem, 1.57rem);
 }
 
+}
+
+
+
+
+
+
+
+
+/*Seção Regras e Regulamentos*/
+
+.secao {
+  position: relative;
+  display: flex;
+  align-items: stretch; /* Estica os itens verticalmente */
+  text-align: center;
+}
+
+.secao-img {
+  flex: 0 0 60%;/* 60% da largura da seção para a imagem */
+  overflow: hidden;
+}
+
+.secao-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secao-texto{
+  background-color: #000000;
+  color: white;
+  flex: 0 0 40%;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  padding: 50px 40px;
+}
+
+.secao h1 {
+  text-align: center;
+  color: white;
+  padding-bottom:20px;
+  font-size: 2rem;
+}
+
+.secao p {
+  text-align: justify;
+  font-weight: 200;
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+
+.secao button{
+  text-align: center;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin: 30px 0px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.secao button:hover{
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Resposividade das sections*/
+
+@media (max-width: 768px) {
+  .secao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .secao-img,
+  .secao h1,
+  .secao p {
+    flex: 0 0 100%; /* Ocupa toda a largura da seção */
+  }
+
+  .secao p{
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size: 0.96rem;
+  }
+
+  .secao h1{
+    font-size: 1.5rem;
+  }
+
+  .secao-texto{
+    padding: 20px 25px;
+  }
+
+/* Estilos para o botão */
+button {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.secao button{
+  font-size: 0.96rem;
+}
+}
+
+/*Adequação às telas do celular: tamanho 480px*/
+@media (max-width: 480px) {
+
+  .secao p{
+    padding-top: 5px;
+    font-size: 0.72rem;
+  }
+
+  .secao-texto{
+    padding:5px;
+  }
+
+  .secao h1{
+    font-size: 1.2rem;
+    padding-top: 10px;
+  }
+  button {
+    width: auto;
+    height: auto;
+  }
+
+  .secao button{
+    font-size: 0.72rem;
+  }
 }
