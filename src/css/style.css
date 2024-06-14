@@ -140,9 +140,11 @@ nav {
 }
 
 .horizontal-line {
-  border-top: 2px solid black; /* Cor e espessura da linha */
-  width: 100%; /* Largura da linha */
-  margin: 0; /* Espaçamento ao redor da linha */
+  border-top: 1px solid black; /* Cor e espessura da linha */
+  width: 300px; /* Largura da linha */
+  margin: 0 auto; /* Centraliza a linha horizontalmente */
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 #texto-apresentacao{
@@ -431,4 +433,89 @@ button {
   .secao button{
     font-size: 0.72rem;
   }
+}
+
+/* Estilo para a seção de classificação */
+.classificacao {
+  max-height: 400px; /* Ajuste a altura conforme necessário */
+  overflow-x: auto; /* Barra de rolagem horizontal */
+  position: relative;
+}
+
+/* Estilo para o contêiner de rolagem */
+.scroll-container {
+  position: relative;
+}
+
+/* Estilo para a seta */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 50%;
+  z-index: 1;
+  display: none; /* Esconde as setas inicialmente */
+}
+
+/* Estilo para a seta da esquerda */
+.left-arrow {
+  left: 10px;
+}
+
+/* Estilo para a seta da direita */
+.right-arrow {
+  right: 10px;
+}
+
+/* Estilo para a tabela */
+table {
+  border-collapse: collapse;
+  margin: 20px 0px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilo para as linhas da tabela */
+table tr {
+  padding: 0.5rem;
+}
+
+/* Estilo para o cabeçalho da tabela */
+thead tr {
+  background-color: #010F1C;
+  font-weight: bold;
+}
+
+/* Estilo para o corpo da tabela */
+tbody {
+  background-color: #dfe9f3;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #54799C;
+}
+
+/* Estilo para as células da tabela */
+th, td {
+  border-right: 0.05rem solid #ccd0e8;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 350;
+}
+
+thead th {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Estilo para o botão */
+.classificacao button {
+  background-color: salmon;
+  border-radius: 100px;
+  padding: 10px;
 }
