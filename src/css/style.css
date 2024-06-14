@@ -442,34 +442,6 @@ button {
   position: relative;
 }
 
-/* Estilo para o contêiner de rolagem */
-.scroll-container {
-  position: relative;
-}
-
-/* Estilo para a seta */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 5px;
-  border-radius: 50%;
-  z-index: 1;
-  display: none; /* Esconde as setas inicialmente */
-}
-
-/* Estilo para a seta da esquerda */
-.left-arrow {
-  left: 10px;
-}
-
-/* Estilo para a seta da direita */
-.right-arrow {
-  right: 10px;
-}
 
 /* Estilo para a tabela */
 table {
