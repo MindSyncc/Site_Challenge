@@ -1,0 +1,396 @@
+/* Texto de apresentação */
+
+.section-apresentacao{
+    padding: 80px 100px;
+  }
+  .header-apresentacao{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 4rem;
+  }
+  
+  .horizontal-line {
+    border-top: 1px solid black; /* Cor e espessura da linha */
+    width: 400px; /* Largura da linha */
+    margin: 0 auto; /* Centraliza a linha horizontalmente */
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  #texto-apresentacao{
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 20px;
+  }
+  
+  
+  
+  
+  
+  /* Responsividade para tablet: padrão 768px*/
+  
+  @media (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .header-apresentacao{
+      font-size: 3.2rem;
+    }
+  
+    .texto-apresentacao{
+      font-size: 1.6rem;
+    }
+  
+  
+    .mobile-menu {
+      display: block;
+    }
+  
+    
+    .active{
+      font-size: 1rem;
+    }
+  
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in;
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
+  /*Adequação às telas do celular: tamanho 480px*/
+  @media (max-width: 480px) {
+
+    .section-apresentacao{
+      padding: 5px;
+    }
+  
+    .header-apresentacao{
+      font-size: 2rem;
+    }
+  
+    #texto-apresentacao{
+      font-size: 1.2rem;
+    }
+  
+    .mobile-menu div {
+      width: 24px;
+      height: 1.5px;
+      margin: 8px;
+      background-color: #fff;
+    }
+  
+    .logo-container{
+      margin: 0;
+      padding: 0;
+    }
+  .active{
+    font-size: clamp(0.7rem, 0.8rem, 1.57rem);
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*Seção Regras e Regulamentos*/
+  
+  .secao {
+    position: relative;
+    display: flex;
+    align-items: stretch; /* Estica os itens verticalmente */
+    text-align: center;
+  }
+  
+  .secao-img {
+    flex: 0 0 60%;/* 60% da largura da seção para a imagem */
+    overflow: hidden;
+  }
+  
+  .secao-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .secao-texto{
+    background-color: #000000;
+    color: white;
+    flex: 0 0 40%;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px 40px;
+  }
+  
+  .secao h1 {
+    text-align: center;
+    color: white;
+    padding-bottom:20px;
+    font-size: 3.5rem;
+  }
+  
+  .secao p {
+    text-align: justify;
+    font-weight: 200;
+    font-size: 2rem;
+    padding-bottom: 30px;
+    padding-top: 25px;
+  }
+  
+  .secao button{
+    text-align: center;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin: 30px 0px;
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+  
+  .secao button:hover{
+    background-color: #3b3b3b;
+    color: #ffffff;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Resposividade das sections*/
+  
+  @media (max-width: 768px) {
+    .secao {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    
+  .section-apresentacao{
+    padding: 40px 50px;
+  }
+  
+    .secao-img,
+    .secao h1,
+    .secao p {
+      flex: 0 0 100%; /* Ocupa toda a largura da seção */
+    }
+  
+    .secao p{
+      padding-top: 20px;
+      padding-bottom: 0px;
+      font-size: 1.6rem;
+    }
+  
+    .secao h1{
+      font-size: 2.8rem;
+    }
+  
+    .secao-texto{
+      padding: 20px 25px;
+    }
+  
+  /* Estilos para o botão */
+  button {
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .secao button{
+    font-size: 1.6rem;
+  }
+  }
+  
+  /*Adequação às telas do celular: tamanho 480px*/
+  @media (max-width: 480px) {
+  
+    .secao p{
+      padding-top: 5px;
+      font-size: 1.2rem;
+    }
+  
+    .secao-texto{
+      padding: 5px;
+    }
+  
+    .section-apresentacao{
+      padding: 10px;
+    }
+  
+    .secao h1{
+      font-size: 2.1rem;
+      padding-top: 10px;
+    }
+    button {
+      width: auto;
+      height: auto;
+    }
+  
+    .secao button{
+      font-size: 1.2rem;
+    }
+  }
+
+
+
+  
+  /* Estilo para a seção de classificação */
+  .classificacao {
+    max-height: 400px; /* Ajuste a altura conforme necessário */
+    overflow-x: auto; /* Barra de rolagem horizontal */
+    position: relative;
+    text-align: center;
+  }
+  
+  
+  /* Estilo para a tabela */
+  table {
+    border-collapse: collapse;
+    margin: 20px 0px;
+    width: 90%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Estilo para as linhas da tabela */
+  table tr {
+    padding: 0.5rem;
+  }
+  
+  /* Estilo para o cabeçalho da tabela */
+  thead tr {
+    background-color: #010F1C;
+    font-weight: bold;
+  }
+  
+  /* Estilo para o corpo da tabela */
+  tbody {
+    background-color: #dfe9f3;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #54799C;
+  }
+  
+  /* Estilo para as células da tabela */
+  th, td {
+    border-right: 0.05rem solid #ccd0e8;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 350;
+  }
+  
+  thead th {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  
+  .container-botao{
+    text-align: center;
+  }
+  
+  /* Estilo para o botão */
+  #button-classificacao {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 100px;
+  }
+  
+  #button-classificacao:hover{
+    background-color: #989696;
+    color: #000000;
+    cursor: pointer;
+
+    
+  }
+  
+  @media (max-width: 480px){
+    .h1-classificacao{
+      text-align: center;
+      margin-top: 100px;
+    }
+    table{
+      border: 3px solid #000;
+    }
+    table thead tr{
+      display: none;
+    }
+    table tr{
+      display: block;
+    }
+    table th, table td{
+      padding: 0.5rem;
+    }
+    table td{
+      text-align: right;
+      display: block;
+      font-size: 1.44rem;
+    }
+    table td::before{
+      content: attr(title) ": ";
+      float: left;
+  
+    }
+    tbody tr:nth-child(even){
+      background-color: #000000;
+      color: #fff;
+    }
+
+    #button-classificacao{
+        font-size: 1.44rem;
+        margin:0px 20px;
+        margin-bottom: 20px;
+    }
+
+    .horizontal-line {
+        width: 200px; /* Largura da linha */
+      }
+
+      th, td {
+        border-right: none;
+      }
+  }
+  

@@ -1,3 +1,7 @@
+/*IMPORTANTE: INSERIR AQUI APENAS O JAVASCRIPT QUE VAI SER APLICADO A TODAS AS PÁGINA, QUE SÃO A BARRA DE NAVEGAÇÃO E NO FOOTER*/
+
+/* Javascript da barra de navegação*/
+
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
