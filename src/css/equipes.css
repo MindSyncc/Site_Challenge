@@ -1,6 +1,113 @@
-.container-header{
-    background: url('../assets/img/equipes/carrousel/cupra.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(28, 28, 28);
+  color: white;
+  margin: 0;
+}
+/* Estilos para o banner */
+#banner {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+/* Estilos adicionais para garantir que o conteúdo principal fique abaixo do banner */
+main {
+  position: relative;
+  z-index: 5;
+  padding-top: 100vh;
+}
+.texto-inicio p {
+  text-align: center;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+.wrapper {
+  padding: 10px 10px;
+}
+#card {
+  padding: 50px 0;
+}
+.box-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+}
+.box img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.texto {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, #1c1c1c 60%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 2rem;
+  transition: height 0.5s;
+}
+.texto h3 {
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 80%;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.texto a {
+  margin-top: 10px;
+  color: #262626;
+  text-decoration: none;
+  font-size: 1rem;
+  background: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+}
+.box:hover img {
+  transform: scale(1.2);
+}
+.box:hover .texto {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .box-area {
+      grid-template-columns: repeat(2, 1fr);
   }
-  
+}
+@media (max-width: 480px) {
+  .box-area {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
