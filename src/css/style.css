@@ -15,12 +15,6 @@
   font-size: 10px;
 }
 
-.container-header{
-  background: url('../assets/img/home/carrousel/car.jpg') no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-}
-
 .container-header #formula{
   font-size: 3.5rem;
   font-family: 'Roboto Mono', monospace;
