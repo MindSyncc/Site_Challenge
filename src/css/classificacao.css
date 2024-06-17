@@ -1,3 +1,7 @@
+#header{
+  background-color: black;
+}
+
 .classificacao {
     overflow-x: auto; /* Barra de rolagem horizontal */
     position: relative;

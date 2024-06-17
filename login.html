@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="src/assets/img/logo/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
     <title>Fórmula E</title>
 </head>
 <body>
@@ -38,9 +41,161 @@
       </header>
   </div>
 
-  <main>
 
-  </main>
+  <div class="container">
+    <div class="content first-content">
+        <div class="first-column">
+            <h2 class="title title-primary">Bem-vindo!</h2>
+            <p class="description description-primary">Para se manter conectado conosco</p>
+            <p class="description description-primary">Faça login com suas informações pessoais</p>
+            <button id="signin" class="btn btn-primary">Entrar</button>
+        </div>    
+        <div class="second-column">
+            <h2 class="title title-second">criar conta</h2>
+            <div class="social-media">
+                <ul class="list-social-media">
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media facebook">
+                            <i class="fab fa-facebook-f"></i>        
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-google-plus-g"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-linkedin-in"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div><!-- social media -->
+            <p class="description description-second">ou utilize seu e-mail para cadastro:</p>
+            <form class="form">
+                <label class="label-input" for="">
+                    <i class="far fa-user icon-modify"></i>
+                    <input type="text" placeholder="Nome">
+                </label>
+                
+                <label class="label-input" for="">
+                    <i class="far fa-envelope icon-modify"></i>
+                    <input type="email" placeholder="Email">
+                </label>
+                
+                <label class="label-input" for="">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password" placeholder="Senha">
+                </label>
+                
+                
+                <button class="btn btn-second">Cadastrar-se</button>        
+            </form>
+        </div><!-- second column -->
+    </div><!-- first content -->
+    <div class="content second-content">
+        <div class="first-column">
+            <h2 class="title title-primary">Não tem cadastro?</h2>
+            <p class="description description-primary">Introduza os seus dados pessoais</p>
+            <p class="description description-primary">e faça login logo após</p>
+            <button id="signup" class="btn btn-primary">Cadastrar</button>
+        </div>
+        <div class="second-column">
+            <h2 class="title title-second">Faça o seu login</h2>
+            <div class="social-media">
+                <ul class="list-social-media">
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-google-plus-g"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-linkedin-in"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div><!-- social media -->
+            <p class="description description-second">ou use sua conta de e-mail:</p>
+            <form class="form">
+            
+                <label class="label-input" for="">
+                    <i class="far fa-envelope icon-modify"></i>
+                    <input type="email" placeholder="Email">
+                </label>
+            
+                <label class="label-input" for="">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password" placeholder="Password">
+                </label>
+            
+                <a class="password" href="#">Esqueceu a senha?</a>
+                <button class="btn btn-second" id="loginButton">Entrar</button>
+                
+            
+
+            </form>
+        </div><!-- second column -->
+    </div><!-- second-content -->
+</div>
+
+<!-- Rodapé -->
+<footer>
+    <div id="fundodiv">
+      <!-- Informações de contato -->
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">E-mail:</a></li>
+          <li><a href="#">formulae@gmail.com</a></li>
+          <li><a href="#">Telefone:</a></li>
+          <li><a href="#">+55 1111-1111</a></li>
+        </ul>
+      </div>
+      <!-- Comunidade -->
+      <div class="footer-col">
+        <h4>Comunidade</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Ideias</a></li>
+          <li><a href="#">Desenvolvedores</a></li>
+        </ul>
+      </div>
+      <!-- Links Úteis -->
+      <div class="footer-col">
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Políticas de Privacidade</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </div>
+      <!-- Redes Sociais -->
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+      <div class="direitos">
+        <p>Copyright @ 2024 - FórmulaE - Todos os direitos reservados</p>
+    </div>
+    </div>
+  </footer>
+  
+<script src="src/js/login.js"></script>
+
 
     <script src="src/js/script.js"></script>
 </body>
