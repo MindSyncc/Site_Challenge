@@ -34,55 +34,63 @@ let imagens = [
   slideShow();
 
 
-  /* Botão do pop-up com informações das equipes*/
   document.addEventListener('DOMContentLoaded', (event) => {
-    // Obtém os elementos
-    var popup = document.getElementById('popup');
-    var openPopupBtn = document.getElementById('openPopupBtn');
-    var closeBtn = document.getElementsByClassName('close-btn')[0];
-
-    // Abre o pop-up ao clicar no botão
-    openPopupBtn.onclick = function() {
-      popup.style.display = 'flex';
-    }
-
-    // Fecha o pop-up ao clicar no botão de fechar
-    closeBtn.onclick = function() {
-      popup.style.display = 'none';
-    }
-
-    // Fecha o pop-up ao clicar fora do conteúdo do pop-up
-    window.onclick = function(event) {
-      if (event.target == popup) {
+    // Obtém todos os botões de abrir pop-up
+    var openPopupBtns = document.getElementsByClassName('openPopupBtn');
+    var closeBtns = document.getElementsByClassName('close-btn');
+  
+    // Adiciona evento de clique para cada botão de abrir pop-up
+    Array.from(openPopupBtns).forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var popupId = this.getAttribute('data-popup-id');
+        var popup = document.getElementById(popupId);
+        popup.style.display = 'flex';
+      });
+    });
+  
+    // Adiciona evento de clique para cada botão de fechar pop-up
+    Array.from(closeBtns).forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var popup = this.closest('.popup');
         popup.style.display = 'none';
+      });
+    });
+  
+    // Fecha o pop-up ao clicar fora do conteúdo do pop-up
+    window.addEventListener('click', function(event) {
+      if (event.target.classList.contains('popup')) {
+        event.target.style.display = 'none';
       }
-    }
+    });
   });
-
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  
+  // Função de slideshow
+  let slideIndex = 1;
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  
+  // Inicia o slideshow
+  showSlides(slideIndex);
+  

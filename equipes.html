@@ -1,254 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="src/assets/img/logo/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/equipes.css">
-      <!-- Incluindo o CSS do Font Awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <!--Incluindo o Css do FlatIcon-->
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+    <!-- Incluindo o CSS do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Incluindo o Css do FlatIcon-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fórmula E</title>
-</head>
-<body>
-  <div class="container-header">
-    <header id="header">
-      <div class="logo-container">
-        <a href="index.html">
-          <img src="src/assets/img/logo/logo.jpg" alt="Formula E Logo" id="logo">
-          <span id="formula">Fórmula </span><span id="e">E</span>
-        </a>
+  </head>
+
+  <body>
+    <div class="container-header">
+      <header id="header">
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="src/assets/img/logo/logo.jpg" alt="Formula E Logo" id="logo">
+            <span id="formula">Fórmula </span><span id="e">E</span>
+          </a>
+        </div>
+        <nav class="navbar">
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li class="navlink"><a href="noticias.html">Notícias</a></li>
+            <li class="navlink"><a href="classificacao.html">Classificação</a></li>
+            <li class="navlink"><a href="calendario.html">Calendário</a></li>
+            <li class="navlink"><a href="pilotos.html">Pilotos</a></li>
+            <li class="navlink"><a href="equipes.html">Equipes</a></li>
+            <li class="navlink"><a href="regras.html">Regras</a></li>
+            <li class="navlink"><a href="jogos.html">Jogo</a></li>
+            <li class="navlink" id="login"><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="banner">
+        <img id="imgBanner" src="sua-imagem.jpg" alt="Banner">
       </div>
-      <nav class="navbar">
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li class="navlink"><a href="noticias.html">Notícias</a></li>
-          <li class="navlink"><a href="classificacao.html">Classificação</a></li>
-          <li class="navlink"><a href="calendario.html">Calendário</a></li>
-          <li class="navlink"><a href="pilotos.html">Pilotos</a></li>
-          <li class="navlink"><a href="equipes.html">Equipes</a></li>
-          <li class="navlink"><a href="regras.html">Regras</a></li>
-          <li class="navlink"><a href="jogos.html">Jogo</a></li>
-          <li class="navlink" id="login"><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="banner">
-      <img id="imgBanner" src="sua-imagem.jpg" alt="Banner">
-    </div>
-  </div>
-  
-  <main>
-    <div class="texto-inicio">
-      <p>Temporada 23/24</p>
     </div>
 
-    <div class="wrapper">
-      <div id="card">
+    <main>
+      <div class="texto-inicio">
+        <p>Temporada 23/24</p>
+      </div>
+
+      <div class="wrapper">
+        <div id="card">
           <div class="box-area">
-              <div class="box">
-                  <img src= "src/assets/img/equipes/andretti/andretti.jpeg" alt="Andretti" alt="Image 1">
-                  <div class="texto">
-                      <h3>ANDRETTI FORMULA E</h3>
-                      <button id="openPopupBtn">Saiba mais sobre a equipe Andretti</button>
-                      <!-- Estrutura do pop-up -->
-                      <div id="popup" class="popup">
-                        <div class="popup-content">
-                          <span class="close-btn">&times;</span>
-
-                          <div class="slideshow-container">
-
-                            <div class="mySlides fade">
-                              <div class="numbertext">1 / 5</div>
-                              <img src="src/assets/img/equipes/cupra/cupra.jpg">
-                              <div class="text">Andretti Formula E</div>
-                            </div>
-                          
-                            <div class="mySlides fade">
-                              <div class="numbertext">2 / 5</div>
-                              <img src="src/assets/img/equipes/cupra/cupra2.jpg">
-                              <div class="text">ABT Cupra Formula E Team</div>
-                            </div>
-                          
-                            <div class="mySlides fade">
-                              <div class="numbertext">3 / 5</div>
-                              <img src="src/assets/img/equipes/cupra/cupra3.jpg">
-                              <div class="text">DS Penske</div>
-                            </div>
-                          
-                            <div class="mySlides fade">
-                              <div class="numbertext">4 / 5</div>
-                              <img src="src/assets/img/equipes/cupra/cupra4.jpg">
-                              <div class="text">Envision Racing</div>
-                            </div>
-                          
-                            <div class="mySlides fade">
-                              <div class="numbertext">5 / 5</div>
-                              <img src="src/assets/img/equipes/cupra/cupra4.jpg">
-                              <div class="text">ERT Formula E Team</div>
-                            </div>
-
-                          </div>
-                          <br>
-                          
-                          <!-- The dots/circles -->
-                          <div>
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span> 
-                            <span class="dot" onclick="currentSlide(4)"></span> 
-                            <span class="dot" onclick="currentSlide(5)"></span> 
-                          </div>
-                          
-                          
-                          <p class="pop-up-text">A equipe Andretti tem uma longa história na Fórmula E, competindo desde a primeira temporada em 2014/15. Com um legado sólido, a equipe norte-americana retorna para a era Gen3, mantendo Jake Dennis pela terceira temporada consecutiva e adicionando Andre Lotterer, experiente piloto do automobilismo alemão.
-
-                            A Andretti formou uma parceria significativa com a BMW por três temporadas. A BMW, além de fornecer carros de segurança e oficiais, se tornou uma equipe de fábrica antes da temporada 2018/19. Durante a temporada 2017/18, a BMW ofereceu suporte técnico, e Antonio Felix da Costa obteve um sexto lugar em Hong Kong, apesar da equipe terminar em último no campeonato.
-                            
-                            Na temporada 2018/19, como equipe de fábrica, a Andretti estreou o BMW iFE.18 com Da Costa e Alex Sims. O time terminou em quinto lugar, e para 2019/20, contratou Maximilian Guenther, que venceu em Santiago e Tempelhof, enquanto Sims ficou em 13º lugar.
-                            
-                            A temporada 7 foi destaque para Jake Dennis, que brilhou com vitórias em Valência e Londres, terminando em terceiro no campeonato. Na temporada 8, Dennis, ao lado de Oliver Askew, manteve-se competitivo com vitórias em Diriyah e Londres.
-                            
-                            Com Lotterer a bordo, a Andretti está pronta para a nova era da Fórmula E e do Gen3, buscando continuar sua trajetória de sucesso e competitividade no campeonato.</p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="box">
-                  <img src="src/assets/img/equipes/cupra/cupra5.png" alt="Image 2">
-                  <div class="texto">
-                      <h3>ABT CUPRA FORMULA E TEAM</h3>
-                      <a href="#">Learn More</a>
-                  </div>
-              </div>
-              <div class="box">
-                  <img src="src/assets/img/equipes/ds_penske/ds5.jpg" alt="Image 3">
-                  <div class="texto">
-                      <h3>DS PENSKE</h3>
-                      <a href="#">DS PENSKE</a>
-                  </div>
-              </div>
-              <div class="box">
-                  <img src="src/assets/img/equipes/envision/envision5.png" alt="Image 4">
-                  <div class="texto">
-                      <h3>ENVISION RACING</h3>
-                      <a href="#">Learn More</a>
-                  </div>
-              </div>
-              <div class="box">
-                  <img src="src/assets/img/equipes/ert/ert5.png" alt="Image 5">
-                  <div class="texto">
-                      <h3>ERT FORMULA E TEAM</h3>
-                      <a href="#">ERT FORMULA E TEAM</a>
-                  </div>
-              </div>
-              <div class="box">
-                  <img src="src/assets/img/equipes/jaguar/jaguar.jpg" alt="Image 6">
-                  <div class="texto">
-                      <h3>JAGUAR TCS RACING</h3>
-                      <a href="#">JAGUAR TCS RACING</a>
-                  </div>
-              </div>
-              <div class="box">
-                <img src= "src/assets/img/equipes/mahindra/mahindra4.jpg" alt="Mahindra" alt="Image 1">
-                <div class="texto">
-                    <h3>MAHINDRA RACING</h3>
-                    <a href="#">MAHINDRA RACING</a>
+<div class="box">
+        <img src="src/assets/img/equipes/andretti/andretti.jpeg" alt="Andretti">
+        <div class="texto">
+          <h3>ANDRETTI FORMULA E</h3>
+          <button class="openPopupBtn" data-popup-id="popup1">Saiba mais sobre a equipe Andretti</button>
+          <!-- Estrutura do pop-up -->
+          <div id="popup1" class="popup">
+            <div class="popup-content">
+              <span class="close-btn">&times;</span>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="src/assets/img/equipes/andretti/andretti5.png">
                 </div>
-            </div>
-            <div class="box">
-              <img src= "src/assets/img/equipes/maserati/maserati.jpeg" alt="Andretti" alt="Image 1">
-              <div class="texto">
-                  <h3>MASERATI MSG RACING</h3>
-                  <a href="#">MASERATI MSG RACING</a>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra2.jpg">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra3.jpg">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra4.jpg">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra4.jpg">
+                </div>
               </div>
-          </div>
-          <div class="box">
-            <img src= "src/assets/img/equipes/mclaren/mclaren.png" alt="Andretti" alt="Image 1">
-            <div class="texto">
-                <h3>NEOM MCLAREN FORMULA E TEAM</h3>
-                <a href="#">NEOM MCLAREN FORMULA E TEAM</a>
+              <br>
+              <!-- The dots/circles -->
+              <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+              <p class="pop-up-text">A equipe Andretti tem uma longa história na Fórmula E, competindo desde a
+                primeira temporada em 2014/15. Com um legado sólido, a equipe norte-americana retorna para a era
+                Gen3, mantendo Jake Dennis pela terceira temporada consecutiva e adicionando Andre Lotterer,
+                experiente piloto do automobilismo alemão.
+
+                A Andretti formou uma parceria significativa com a BMW por três temporadas. A BMW, além de
+                fornecer carros de segurança e oficiais, se tornou uma equipe de fábrica antes da temporada
+                2018/19. Durante a temporada 2017/18, a BMW ofereceu suporte técnico, e Antonio Felix da Costa
+                obteve um sexto lugar em Hong Kong, apesar da equipe terminar em último no campeonato.
+
+                Na temporada 2018/19, como equipe de fábrica, a Andretti estreou o BMW iFE.18 com Da Costa e Alex
+                Sims. O time terminou em quinto lugar, e para 2019/20, contratou Maximilian Guenther, que venceu
+                em Santiago e Tempelhof, enquanto Sims ficou em 13º lugar.
+
+                A temporada 7 foi destaque para Jake Dennis, que brilhou com vitórias em Valência e Londres,
+                terminando em terceiro no campeonato. Na temporada 8, Dennis, ao lado de Oliver Askew, manteve-se
+                competitivo com vitórias em Diriyah e Londres.
+
+                Com Lotterer a bordo, a Andretti está pronta para a nova era da Fórmula E e do Gen3, buscando
+                continuar sua trajetória de sucesso e competitividade no campeonato.</p>
             </div>
-        </div>
-        <div class="box">
-          <img src= "src/assets/img/equipes/nissan/nissan.jpg" alt="Andretti" alt="Image 1">
-          <div class="texto">
-              <h3>NISSAN FORMULA E TEAM</h3>
-              <a href="#">NISSAN FORMULA E TEAM</a>
           </div>
+        </div>
       </div>
       <div class="box">
-        <img src= "src/assets/img/equipes/porsche/porsche5.png" alt="Andretti" alt="Image 1">
+        <img src="src/assets/img/equipes/cupra/cupra5.png" alt="Cupra">
         <div class="texto">
-            <h3>TAG HEUER PORSCHE FORMULA E TEAM</h3>
-            <a href="#">TAG HEUER PORSCHE FORMULA E TEAM</a>
-        </div>
-    </div>
-    
-              
+          <h3>CUPRA</h3>
+          <button class="openPopupBtn" data-popup-id="popup2">Saiba mais sobre a equipe Cupra</button>
+          <!-- Estrutura do pop-up -->
+          <div id="popup2" class="popup">
+            <div class="popup-content">
+              <span class="close-btn">&times;</span>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra.jpg">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra2.jpg">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra3.jpg">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra4.jpg">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="src/assets/img/equipes/cupra/cupra4.jpg">
+                </div>
+              </div>
+              <br>
+              <!-- The dots/circles -->
+              <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+              <p class="pop-up-text">A equipe Cupra tem uma longa história na Fórmula E...</p>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  </main>
 
-  <!-- Rodapé -->
-<footer>
-  <div id="fundodiv">
-    <!-- Informações de contato -->
-    <div class="footer-col">
-      <h4>Contato</h4>
-      <ul>
-        <li><a href="#">E-mail:</a></li>
-        <li><a href="#">formulae@gmail.com</a></li>
-        <li><a href="#">Telefone:</a></li>
-        <li><a href="#">+55 1111-1111</a></li>
-      </ul>
-    </div>
-    <!-- Comunidade -->
-    <div class="footer-col">
-      <h4>Comunidade</h4>
-      <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Ideias</a></li>
-        <li><a href="#">Desenvolvedores</a></li>
-      </ul>
-    </div>
-    <!-- Links Úteis -->
-    <div class="footer-col">
-      <h4>Links Úteis</h4>
-      <ul>
-        <li><a href="#">Termos de Uso</a></li>
-        <li><a href="#">Políticas de Privacidade</a></li>
-        <li><a href="#">Cookies</a></li>
-        <li><a href="#">Suporte</a></li>
-      </ul>
-    </div>
-    <!-- Redes Sociais -->
-    <div class="footer-col">
-      <h4>Redes Sociais</h4>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-discord"></i></a>
+
+
+            <div class="box">
+              <img src="src/assets/img/equipes/ds_penske/ds5.jpg" alt="Image 3">
+              <div class="texto">
+                <h3>DS PENSKE</h3>
+                <a href="#">DS PENSKE</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="src/assets/img/equipes/envision/envision5.png" alt="Image 4">
+              <div class="texto">
+                <h3>ENVISION RACING</h3>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="src/assets/img/equipes/ert/ert5.png" alt="Image 5">
+              <div class="texto">
+                <h3>ERT FORMULA E TEAM</h3>
+                <a href="#">ERT FORMULA E TEAM</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="src/assets/img/equipes/jaguar/jaguar.jpg" alt="Image 6">
+              <div class="texto">
+                <h3>JAGUAR TCS RACING</h3>
+                <a href="#">JAGUAR TCS RACING</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="src/assets/img/equipes/mahindra/mahindra4.jpg" alt="Mahindra" alt="Image 1">
+              <div class="texto">
+                <h3>MAHINDRA RACING</h3>
+                <a href="#">MAHINDRA RACING</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="src/assets/img/equipes/maserati/maserati.jpeg" alt="Andretti" alt="Image 1">
+              <div class="texto">
+                <h3>MASERATI MSG RACING</h3>
+                <a href="#">MASERATI MSG RACING</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="src/assets/img/equipes/mclaren/mclaren.png" alt="Andretti" alt="Image 1">
+              <div class="texto">
+                <h3>NEOM MCLAREN FORMULA E TEAM</h3>
+                <a href="#">NEOM MCLAREN FORMULA E TEAM</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="src/assets/img/equipes/nissan/nissan.jpg" alt="Andretti" alt="Image 1">
+              <div class="texto">
+                <h3>NISSAN FORMULA E TEAM</h3>
+                <a href="#">NISSAN FORMULA E TEAM</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="src/assets/img/equipes/porsche/porsche5.png" alt="Andretti" alt="Image 1">
+              <div class="texto">
+                <h3>TAG HEUER PORSCHE FORMULA E TEAM</h3>
+                <a href="#">TAG HEUER PORSCHE FORMULA E TEAM</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="direitos">
-      <p>Copyright @ 2024 - FórmulaE - Todos os direitos reservados</p>
-  </div>
-  </div>
-</footer>
+    </main>
 
-  <script src="src/js/script.js"></script>
-  <script src="src/js/equipes.js"></script>
-</body>
+    <!-- Rodapé -->
+    <footer>
+      <div id="fundodiv">
+        <!-- Informações de contato -->
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="#">E-mail:</a></li>
+            <li><a href="#">formulae@gmail.com</a></li>
+            <li><a href="#">Telefone:</a></li>
+            <li><a href="#">+55 1111-1111</a></li>
+          </ul>
+        </div>
+        <!-- Comunidade -->
+        <div class="footer-col">
+          <h4>Comunidade</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Ideias</a></li>
+            <li><a href="#">Desenvolvedores</a></li>
+          </ul>
+        </div>
+        <!-- Links Úteis -->
+        <div class="footer-col">
+          <h4>Links Úteis</h4>
+          <ul>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Políticas de Privacidade</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Suporte</a></li>
+          </ul>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="footer-col">
+          <h4>Redes Sociais</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+        <div class="direitos">
+          <p>Copyright @ 2024 - FórmulaE - Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/equipes.js"></script>
+  </body>
+
 </html>
