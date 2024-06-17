@@ -140,7 +140,7 @@
     overflow: hidden;
   }
 
-  .secao-video-img {
+  .secao-video-img{
     flex: 0 0 48%;/* 48% da largura da seção para a imagem */
     overflow: hidden;
   }
