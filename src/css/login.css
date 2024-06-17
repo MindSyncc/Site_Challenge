@@ -6,7 +6,9 @@
     justify-content: center;
     align-items: center;
     height: 130vh;
-    background-color: #ecf0f1;
+    background: #c4c4c4;
+    margin-bottom: -30px;
+
 }
 
 .content {
@@ -29,6 +31,8 @@
     border-bottom-left-radius: 15px;
     left: 0;
 }
+
+
 
 .title {
     font-size: 28px;
