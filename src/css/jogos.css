@@ -4,6 +4,7 @@
 
 .game {
     margin-top: 50px;
+    text-align: center;
 }
 .game h1{
     font-size: 3rem;
@@ -19,9 +20,6 @@
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .car {
@@ -34,6 +32,10 @@
     transform: translateY(-50%);
     transition: left 1s linear;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0dcdc;
 }
 
 
@@ -84,4 +86,14 @@
 
 .corredor:hover {
     background-color: #f9f9f9;
+}
+
+.game button{
+    font-size: 1.6rem;
+    border-radius: 50px;
+    background-color: red;
+}
+
+.game button:hover{
+    background-color: rgb(109, 19, 19);
 }
