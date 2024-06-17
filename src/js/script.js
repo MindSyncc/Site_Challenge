@@ -1,3 +1,61 @@
+/*document.addEventListener("DOMContentLoaded", function() {
+  const circulos = document.querySelectorAll('.circulo');
+  const textos = document.querySelectorAll('.texto');
+
+  circulos.forEach(circulo => {
+      circulo.addEventListener('click', () => {
+          const idCirculo = circulo.id.replace('circulo-', ''); // Remove o prefixo "circulo-"
+          const textoAtivo = document.getElementById(`texto-${idCirculo}`);
+
+          // Remove a classe 'ativo' de todos os textos antes de mostrar o novo
+          textos.forEach(t => t.classList.remove('ativo'));
+
+          // Adiciona a classe 'ativo' ao texto correspondente ao círculo clicado
+          textoAtivo.classList.add('ativo');
+      });
+  });
+});*/
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const circulos = document.querySelectorAll('.circulo');
+  const textos = document.querySelectorAll('.texto');
+
+  circulos.forEach(circulo => {
+      circulo.addEventListener('click', () => {
+          const idCirculo = circulo.id.replace('circulo-', ''); // Remove o prefixo "circulo-"
+
+          // Remove a classe "ativo" de todos os círculos
+          circulos.forEach(c => c.classList.remove('ativo'));
+
+          // Adiciona a classe "ativo" ao círculo clicado
+          circulo.classList.add('ativo');
+
+          // Esconde todos os textos antes de mostrar o novo
+          textos.forEach(t => {
+              t.classList.remove('ativo');
+              t.style.display = 'none';
+          });
+
+          // Mostra o texto específico do círculo clicado
+          const textoAtivo = document.getElementById(`texto-${idCirculo}`);
+          textoAtivo.classList.add('ativo');
+          textoAtivo.style.display = 'block';
+      });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
 /*IMPORTANTE: INSERIR AQUI APENAS O JAVASCRIPT QUE VAI SER APLICADO A TODAS AS PÁGINA, QUE SÃO A BARRA DE NAVEGAÇÃO E NO FOOTER*/
 
 /* Javascript da barra de navegação*/
@@ -74,3 +132,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Run the check once to show boxes already in view on page load
   checkBoxes();
 });
+
+
+//Botão do calendário com alerta de ingresso comprado
+
+document.getElementById("comprar-ingresso").addEventListener("click", function() {
+  alert("Ingresso comprado");
+});
+
+
+
+
